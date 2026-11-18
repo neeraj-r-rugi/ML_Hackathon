@@ -1,0 +1,4 @@
+partition,trips,track_rows,nodes_rows,arcs_rows,route_rows,missing_track_values,gap_gt_1s_transitions,non_increasing_time,invalid_arc_node_refs,invalid_route_arc_refs
+train,80,208417,1933485,3876904,31336,0,7286,0,0,0
+test,10,19160,90689,185041,3477,0,264,0,0,0
+total,90,227577,2024174,4061945,34813,0,7550,0,0,0

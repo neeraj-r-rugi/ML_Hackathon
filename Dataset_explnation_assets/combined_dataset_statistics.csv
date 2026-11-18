@@ -1,0 +1,8 @@
+,value
+trip_count_train,80
+trip_count_test,10
+track_rows_train,208417
+track_rows_test,19160
+processed_trip_count,90
+processing_failures,0
+total_candidate_rows,3462461

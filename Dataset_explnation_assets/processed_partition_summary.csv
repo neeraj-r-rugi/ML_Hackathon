@@ -1,0 +1,3 @@
+split,trips,gps_rows,node_rows,arc_rows,candidate_rows,unmatched_gps,mean_unmatched
+test,10,19160,90689,185041,356420,0,0.0
+train,80,208417,1933485,3876904,3106041,8228,102.85

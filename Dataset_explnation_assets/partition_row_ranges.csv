@@ -1,0 +1,5 @@
+,n_track,n_track,n_track,n_track,n_nodes,n_nodes,n_nodes,n_nodes,n_arcs,n_arcs,n_arcs,n_arcs,n_route,n_route,n_route,n_route
+,count,min,max,sum,count,min,max,sum,count,min,max,sum,count,min,max,sum
+partition,,,,,,,,,,,,,,,,
+test,10,262,3958,19160,10,1770,26635,90689,10,3577,56027,185041,10,95,1323,3477
+train,80,361,19313,208417,80,299,155003,1933485,80,649,307392,3876904,80,59,2266,31336
