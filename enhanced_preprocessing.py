@@ -68,9 +68,24 @@ def process_trip_enhanced(
     split: str, 
     data_root: Path, 
     out_dir: Path,
-    radius: float = SEARCH_RADIUS_M
+    radius: float = SEARCH_RADIUS_M,
+    overwrite: bool = False
 ) -> Dict:
     """Process a single trip with enriched kinematic, geometric, and topological features."""
+    dest_dir = out_dir / split / trip_id
+    cand_file = dest_dir / "candidate_features.csv"
+    if not overwrite and cand_file.exists():
+        track_file = dest_dir / "track_features.csv"
+        n_pts = len(pd.read_csv(track_file)) if track_file.exists() else 0
+        n_cands = len(pd.read_csv(cand_file))
+        return {
+            "trip_id": trip_id,
+            "split": split,
+            "gps_points": n_pts,
+            "candidates_generated": n_cands,
+            "zero_candidate_points": 0
+        }
+
     trip_folder = data_root / split / trip_id
     track_raw = read_file(trip_folder / f"{trip_id}.track", "track")
     nodes_raw = read_file(trip_folder / f"{trip_id}.nodes", "nodes")

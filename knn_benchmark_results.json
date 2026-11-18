@@ -1,0 +1,79 @@
+{
+  "Model 1 (Standard Uniform KNN)": {
+    "Accuracy": 0.9316267657006433,
+    "Precision": 0.49511290866194807,
+    "Recall": 0.9680395387149917,
+    "Macro_F1": 0.8085984545298928,
+    "Top1_Accuracy": 82.8665568369028,
+    "Log_Loss": 0.1849070832164107,
+    "Inference_Time_s": 0.9770827293395996,
+    "Latency_us_per_sample": 21.599193786935462,
+    "Training_Time_s": 0.06464099884033203,
+    "Algorithm_Family": "Instance-Based (KNN Uniform)",
+    "Configuration": "k=15, weights=uniform, metric=euclidean",
+    "Highway_Top1_Accuracy": 88.11096433289299
+  },
+  "Model 2 (Distance-Weighted KNN)": {
+    "Accuracy": 0.9325994208280832,
+    "Precision": 0.49881154499151104,
+    "Recall": 0.9680395387149917,
+    "Macro_F1": 0.8104933931045839,
+    "Top1_Accuracy": 81.64744645799011,
+    "Log_Loss": 0.1838670848077176,
+    "Inference_Time_s": 0.9705963134765625,
+    "Latency_us_per_sample": 21.45580638584704,
+    "Training_Time_s": 0.0662078857421875,
+    "Algorithm_Family": "Instance-Based (KNN Distance-Weighted)",
+    "Configuration": "k=15, weights=distance, metric=euclidean",
+    "Highway_Top1_Accuracy": 91.6116248348745
+  },
+  "Model 3 (Manhattan L1 KNN)": {
+    "Accuracy": 0.9391427371399518,
+    "Precision": 0.5251068376068376,
+    "Recall": 0.97166392092257,
+    "Macro_F1": 0.8240625485620541,
+    "Top1_Accuracy": 83.65733113673805,
+    "Log_Loss": 0.17196605660561068,
+    "Inference_Time_s": 2.1339190006256104,
+    "Latency_us_per_sample": 47.17198312499968,
+    "Training_Time_s": 0.06529617309570312,
+    "Algorithm_Family": "Instance-Based (Manhattan L1 KNN)",
+    "Configuration": "k=15, weights=distance, metric=manhattan (L1)",
+    "Highway_Top1_Accuracy": 92.9326287978864
+  },
+  "Model 4 (Fine-Grained Local KNN)": {
+    "Accuracy": 0.9330194309967504,
+    "Precision": 0.5004309601792795,
+    "Recall": 0.956507413509061,
+    "Macro_F1": 0.8099847923632346,
+    "Top1_Accuracy": 79.11037891268535,
+    "Log_Loss": 0.2843830520553938,
+    "Inference_Time_s": 0.7388260364532471,
+    "Latency_us_per_sample": 16.33233937823567,
+    "Training_Time_s": 0.06446695327758789,
+    "Algorithm_Family": "Instance-Based (Fine-Grained KNN)",
+    "Configuration": "k=7, weights=distance, metric=euclidean",
+    "Highway_Top1_Accuracy": 90.91809775429326
+  },
+  "Model 5 (Bayesian Tuned KNN)": {
+    "Accuracy": 0.9384795631894246,
+    "Precision": 0.5223087818696884,
+    "Recall": 0.9719934102141681,
+    "Macro_F1": 0.822731453720115,
+    "Top1_Accuracy": 84.4481054365733,
+    "Log_Loss": 0.1728068062030943,
+    "Inference_Time_s": 2.3018879890441895,
+    "Latency_us_per_sample": 50.885071712186694,
+    "Training_Time_s": 0.06719017028808594,
+    "Algorithm_Family": "Bayesian-Tuned Instance-Based (KNN)",
+    "Configuration": "Optuna TPE: k=15, weights=uniform, p=1, leaf_size=20",
+    "Best_Params": {
+      "n_neighbors": 15,
+      "weights": "uniform",
+      "p": 1,
+      "leaf_size": 20
+    },
+    "CV_Macro_F1": 0.8967294037157917,
+    "Highway_Top1_Accuracy": 90.09247027741083
+  }
+}
