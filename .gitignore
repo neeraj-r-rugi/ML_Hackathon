@@ -13,15 +13,15 @@ __pycache__/
 processed_enhanced/
 
 # Teammates' Models & Benchmark Artifacts (Personal scope: SVM & XGBoost only)
-model_logistic_regression.joblib
+
 model_random_forest.joblib
 model_knn.joblib
-logistic_regression_benchmark_results.json
+
 random_forest_benchmark_results.json
 knn_benchmark_results.json
 models_comparison_chart.png
 
 # Teammates' Training Scripts (Available locally, excluded from git)
-train_logistic_regression.py
+
 train_random_forest.py
 train_knn.py
