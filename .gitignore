@@ -6,10 +6,15 @@ __pycache__/
 *.pyo
 .DS_Store
 
-# Large Preprocessed Local Feature Datasets (>1.8 GB)
+# Dataset Folders
+evaluator_test/
+evaluator_test
+Student folder/
+PathSnap_student_materials/
 processed_enhanced/
 processed/
 
 # Scratch & Temporary outputs
 *.csv
 *.html
+*.zip
