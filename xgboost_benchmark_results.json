@@ -1,0 +1,78 @@
+{
+  "Model 1 (Baseline XGBoost)": {
+    "Accuracy": 0.9691494050242397,
+    "Precision": 0.6352667231160034,
+    "Recall": 0.9910832232496698,
+    "Macro_F1": 0.8788476006597139,
+    "Top1_Accuracy": 89.76221928665787,
+    "Log_Loss": 0.0739339326188316,
+    "Inference_Time_s": 0.013831853866577148,
+    "Latency_us_per_sample": 0.24384052651524282,
+    "Training_Time_s": 0.569831132888794,
+    "Algorithm_Family": "Gradient Boosted Trees (XGBoost)",
+    "Configuration": "n_est=100, depth=6, lr=0.1, scale_pos=18.7"
+  },
+  "Model 2 (Shallow Fast XGBoost)": {
+    "Accuracy": 0.9560863816659322,
+    "Precision": 0.5489874110563766,
+    "Recall": 0.9937252311756936,
+    "Macro_F1": 0.8417569991527645,
+    "Top1_Accuracy": 90.38969616908851,
+    "Log_Loss": 0.1044652994076341,
+    "Inference_Time_s": 0.005384922027587891,
+    "Latency_us_per_sample": 0.0949303133995221,
+    "Training_Time_s": 0.24326515197753906,
+    "Algorithm_Family": "Gradient Boosted Trees (Low-Latency)",
+    "Configuration": "n_est=45, depth=3, lr=0.15, subsample=0.8, colsample=0.8"
+  },
+  "Model 3 (Deep Reg XGBoost)": {
+    "Accuracy": 0.9747553988541208,
+    "Precision": 0.6826923076923077,
+    "Recall": 0.9848084544253632,
+    "Macro_F1": 0.8964396363565637,
+    "Top1_Accuracy": 90.09247027741083,
+    "Log_Loss": 0.061707943407458624,
+    "Inference_Time_s": 0.0191652774810791,
+    "Latency_us_per_sample": 0.33786297895247425,
+    "Training_Time_s": 1.0480339527130127,
+    "Algorithm_Family": "Gradient Boosted Trees (Deep Regularized)",
+    "Configuration": "n_est=150, depth=8, lr=0.08, lambda=3.0, alpha=1.0, gamma=0.2"
+  },
+  "Model 4 (XGBRanker Pairwise)": {
+    "Accuracy": 0.9705773468488321,
+    "Precision": 0.6466652277142241,
+    "Recall": 0.9894319682959049,
+    "Macro_F1": 0.8831833178843146,
+    "Top1_Accuracy": 89.89431968295905,
+    "Log_Loss": 0.08535925385248061,
+    "Inference_Time_s": 0.010358095169067383,
+    "Latency_us_per_sample": 0.18260194216072953,
+    "Training_Time_s": 0.9117448329925537,
+    "Algorithm_Family": "Learning-to-Rank (XGBRanker)",
+    "Configuration": "objective=rank:pairwise, n_est=80, depth=5, lr=0.1"
+  },
+  "Model 5 (Bayesian Tuned XGBoost)": {
+    "Accuracy": 0.9713530189510797,
+    "Precision": 0.6534675125793044,
+    "Recall": 0.9864597093791282,
+    "Macro_F1": 0.8854021525581023,
+    "Top1_Accuracy": 89.56406869220608,
+    "Log_Loss": 0.06942542325731299,
+    "Inference_Time_s": 0.011389970779418945,
+    "Latency_us_per_sample": 0.2007927858866275,
+    "Training_Time_s": 0.6237878799438477,
+    "Algorithm_Family": "Bayesian-Tuned XGBoost",
+    "Configuration": "Optuna TPE: depth=5, lr=0.225, n_est=125, lambda=0.13",
+    "Best_Params": {
+      "max_depth": 5,
+      "learning_rate": 0.22519400134221715,
+      "n_estimators": 125,
+      "subsample": 0.829597545259111,
+      "colsample_bytree": 0.696805592132731,
+      "gamma": 0.46798356100860794,
+      "reg_lambda": 0.13066739238053282,
+      "reg_alpha": 2.176624112345368
+    },
+    "CV_Macro_F1": 0.8114086815860029
+  }
+}
