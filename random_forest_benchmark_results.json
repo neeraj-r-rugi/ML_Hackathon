@@ -1,0 +1,14 @@
+{
+  "Accuracy": 0.9627075181820192,
+  "Precision": 0.6485890652557319,
+  "Recall": 0.9693574958813839,
+  "Macro_F1": 0.8784134919534674,
+  "Top1_Accuracy": 87.3146622734761,
+  "Log_Loss": 0.08994749404648332,
+  "Inference_Time_s": 0.03193306922912598,
+  "Latency_us_per_sample": 0.7059059891046262,
+  "Training_Time_s": 14.992350816726685,
+  "Algorithm_Family": "Ensemble (Random Forest)",
+  "Key_Config": "n_est=100, max_depth=14, class_weight=balanced_subsample",
+  "Highway_Top1_Accuracy": 93.62615587846763
+}
